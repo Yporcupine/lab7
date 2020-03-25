@@ -6,4 +6,6 @@ comment1.target=Customer(int,\ int,\ int)
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Customer\r\n
 comment2.params=customer
 comment2.target=int\ compareTo(Customer)
-numComments=3
+comment3.params=currentTime
+comment3.target=void\ states(int)
+numComments=4
