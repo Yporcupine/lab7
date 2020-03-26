@@ -30,6 +30,7 @@ public class Shop
   */
   public String run()
   {
+    int givenUp = 0;
     int customerServed = 0;
     float waitingTime = 0;
     while (!customerIn.isEmpty()) {
@@ -41,6 +42,7 @@ public class Shop
       if(current.left == true){
         waitingTime += (float)current.giveUpTime;
         customerIn.pop();
+        givenUp++;
         continue;
       }else if(current.served == true){
         waitingTime += (float)(time - current.orderingTime - current.arrival);
@@ -56,6 +58,6 @@ public class Shop
 
     float waitingTimeAverage = waitingTime / total;
 
-    return Integer.toString(customerServed) +"  " + String.format("%.2f", waitingTimeAverage) + "  " + Integer.toString(total);
+    return Integer.toString(customerServed) +"  " + String.format("%.2f", waitingTimeAverage);
   }
 }

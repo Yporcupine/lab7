@@ -13,7 +13,7 @@ public class test
 
   public static void main(String[] args) {
     test ex = new test();
-    ex.testing(18000);
+    ex.testing(10000);
   }
 
   /**
@@ -32,10 +32,10 @@ public class test
   */
   public void testing(int number)
   {
-    Random random = new Random();
-    customerline = new CustomerQueue();
+    Random random = new Random(10);
+    customerline = new CustomerArray(180);
     for (int i = 0; i < number; i++) {
-      Customer newCustomer = new Customer(random.nextInt(180), (2+random.nextInt(3)), (5+random.nextInt(25)));
+      Customer newCustomer = new Customer(random.nextInt(180), (2+random.nextInt(4)), (5+random.nextInt(26)));
       customerline.add(newCustomer);
     }
 

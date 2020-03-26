@@ -15,10 +15,10 @@ public class CustomerArray implements Customers
   /**
   * Constructor for objects of class CustomerArray
   */
-  public CustomerArray()
+  public CustomerArray(int length)
   {
     // initialise instance variables
-    customerArray = new ArrayList[180];
+    customerArray = new ArrayList[length];
     customerNumber = 0;
   }
 
