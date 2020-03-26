@@ -1,10 +1,10 @@
 import java.util.*;
 import java.io.*;
 /**
-* Write a description of class ExperimentController here.
+* Initiates experiment and record results
 *
-* @author (your name)
-* @version (a version number or a date)
+* @author Yuehao Zhu
+* @version 3/25/2020
 */
 public class ExperimentController
 {
@@ -21,14 +21,8 @@ public class ExperimentController
   public static void main(String[] args) {
     ExperimentController experiment = new ExperimentController();
     experiment.noonAndBefore();
-
   }
-  /**
-  * An example of a method - replace this comment with your own
-  *
-  * @param  y  a sample parameter for a method
-  * @return    the sum of x and y
-  */
+
   private long generateCustomers(int number, Customers customerline,int seed)
   {
     Random random = new Random(seed);
@@ -51,6 +45,13 @@ public class ExperimentController
     return stopTime - startTime;
   }
 
+
+  /**
+  * examines the time it takes to add Customers into either Customer Array or Customer Queue, and the time it takes to run either Customer Array and Customer Queue
+  *
+  *
+  *
+  */
   public void timeTest(){
     try {
       Random random = new Random(10);
@@ -80,6 +81,12 @@ public class ExperimentController
     }
   }
 
+  /**
+  * Run the shop for 100 times with 100 customer in each Customer Queue for both when shop opens at 11 and when shop opens at noon
+  * And record the results for each trial
+  * 
+  *
+  */
   public void noonAndBefore(){
     try{
       PrintWriter shopRunAtNoon = new PrintWriter("shopRunAtNoon.csv");

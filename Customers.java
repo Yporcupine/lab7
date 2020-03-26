@@ -1,18 +1,14 @@
 
 /**
- * Write a description of interface Customers here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
+* interface for CustomerArray and CustomerQueue
+*
+* @author Yuehao Zhu
+* @version 3/25/2020
+*/
 public interface Customers
 {
-    /**
-     * An example of a method header - replace this comment with your own
-     *
-     * @param  y a sample parameter for a method
-     * @return   the result produced by sampleMethod
-     */
+
+    
     public boolean add(Customer customer);
     public boolean isEmpty();
     public Customer pop();

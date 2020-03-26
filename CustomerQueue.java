@@ -1,10 +1,10 @@
 import java.util.*;
 /**
- * Write a description of class CustomerQueue here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
+* Initiates experiment and record results
+*
+* @author Yuehao Zhu
+* @version 3/25/2020
+*/
 public class CustomerQueue extends PriorityQueue<Customer> implements Customers
 {
     // instance variables - replace the example below with your own

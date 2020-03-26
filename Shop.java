@@ -1,9 +1,9 @@
 import java.util.*;
 /**
-* Write a description of class Shop here.
+* initiates an object that can simulate the action happenning in the coffee shop
 *
-* @author (your name)
-* @version (a version number or a date)
+* @author Yuehao Zhu
+* @version 3/25/2020
 */
 public class Shop
 {
@@ -23,10 +23,10 @@ public class Shop
   }
 
   /**
-  * An example of a method - replace this comment with your own
+  * simulates the action happenning in the coffee shop
   *
-  * @param  y  a sample parameter for a method
-  * @return    the sum of x and y
+  *
+  * @return    the number of customer served and the average waiting time for each customer
   */
   public String run()
   {
