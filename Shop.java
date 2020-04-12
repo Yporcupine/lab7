@@ -18,7 +18,7 @@ public class Shop
   public Shop(Customers customerline, int startTime)
   {
     time = startTime;
-    customerIn= customerline;
+    customerIn = customerline;
     total = customerline.size();
   }
 
